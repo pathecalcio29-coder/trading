@@ -320,4 +320,4 @@ if __name__ == "__main__":
     # feed = LivePriceFeed(exchange_id=config.exchange_id, symbol=config.symbol)
 
     bot = GridBot(config=config, price_feed=feed, wallet=wallet)
-    bot.run(max_iterations=50)   # rimuovi il limite per farlo girare all'infinito
+    bot.run(max_iterations=None)   # gira all'infinito, pensato per stare 24/7 su Railway
